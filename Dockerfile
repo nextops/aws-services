@@ -15,6 +15,5 @@ EXPOSE 7687
 
 COPY src/listServices.py listServices.py
 
-# Run listServices.py script when the container launches
-CMD ["python", "listServices.py"]
-
+# Set the entrypoint for the Docker container
+ENTRYPOINT ["python", "listServices.py"]
